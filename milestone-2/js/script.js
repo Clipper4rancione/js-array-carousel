@@ -35,5 +35,12 @@ let counterImg = 0;
 items[counterImg].classList.add('active')
 
 next.addEventListener('click', function(){
-    
+    items[counterImg].classList.remove('active')
+    counterImg++;
+    items[counterImg].classList.add('active');
+})
+prev.addEventListener('click', function(){
+    items[counterImg].classList.remove('active')
+    counterImg--;
+    items[counterImg].classList.add('active');
 })
