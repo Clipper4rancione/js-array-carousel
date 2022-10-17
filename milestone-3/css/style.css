@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+
+.hide{
+    display: none;
+}
+
 .wrapper{
     height: 100vh;
     display: flex;
