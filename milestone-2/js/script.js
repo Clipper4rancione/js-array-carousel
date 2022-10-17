@@ -23,24 +23,11 @@ for(let i = 0; i < image.length; i++){
 //AGGIUNGO I TAG ALLO SLIDER
 slider.innerHTML += imgTags;
 
+//CREO UN CONTATORE PER LE IMMAGINI
+let counterImg = 0;
+
 //SALVO GLI ITEM IN UNA COLLECTION
 const items = document.getElementsByClassName('item');
-//SELEZIONO I BOTTONI PER SWITCHARE TRA LE IMMAGINI
-const next = document.querySelector('.down');
-const prev = document.querySelector('.top');
-
-let counterImg = 0;
 
 //assegno la classe active al primo elemento deella collection
 items[counterImg].classList.add('active')
-
-next.addEventListener('click', function(){
-    items[counterImg].classList.remove('active')
-    counterImg++;
-    items[counterImg].classList.add('active');
-})
-prev.addEventListener('click', function(){
-    items[counterImg].classList.remove('active')
-    counterImg--;
-    items[counterImg].classList.add('active');
-})
