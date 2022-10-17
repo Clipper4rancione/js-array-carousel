@@ -2,10 +2,10 @@
 //CONTENITORE IMMAGINI
 const image = [
     'lake.jpg',
-    'mountain.jpg',
-    'london.jpg',
-    'casino.jpg',
-    'sea.jpg'
+    'cyberpunk.jpg',
+    'mountain-lake.jpg',
+    'mushrooms.jpg',
+    'mountain-snow.jpg'
 ];
 
 //CONTENITORE IMMAGINI
