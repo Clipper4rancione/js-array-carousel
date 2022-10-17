@@ -47,11 +47,15 @@ next.addEventListener('click', function(){
     prev.classList.remove('hide');
     if(counterImg === image.length - 1){
         next.classList.add('hide');
-
     }
 })
 prev.addEventListener('click', function(){
     items[counterImg].classList.remove('active')
     counterImg--;
     items[counterImg].classList.add('active');
+
+    next.classList.remove('hide');
+    if(counterImg === 0){
+        prev.classList.add('hide');
+    }
 })
